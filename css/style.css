@@ -1,9 +1,39 @@
-.json {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: left;
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0px;
 }
+header {
+    background-color: darkcyan;
+    text-align: center;
+    padding:3px;
+
+}
+.div_maior {
+    /*margin-left:200px;*/
+    margin-right:50px;
+    border:black solid 1px;
+    padding:5px;
+    display:inline-block;
+}
+
 a {
     border: solid black 1px;
     text-decoration: none;
     padding:5px;
+    
+}
+h2 {
+    margin-left:5px;
+}
+button {
+    margin-left:25px;
+}
+.json {
+    display:inline-block;
+    float:right;
+    width:400px;
+    margin-right:500px;
+    border:solid black 1px;
+    word-break: break-all;
+    padding:20px;
 }

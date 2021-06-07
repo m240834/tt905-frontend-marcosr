@@ -7,41 +7,49 @@
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
     <body>
-        <h1>Formulário</h1>
-        <h2>Operações</h2>
-        <a href="javascript:callFetchWithGet()">Get</a>
-        <a href="javascript:callFetchWithPost('Cristianismo','Marcos', 2013)">Post</a>
-        <a href="javascript:callFetchWithPut(1, 'Davai','Mamr', 2094)">Put</a>
-        <a href="javascript:callFetchWithDelete(1)">Delete</a>
-        <p class="json" id="json"></p>
-        <h2>Formulário Básico (Post)</h2>
-        <form id="postForm">
-            <label for="title">Title:</label>
-            <input type="text" id="title" name="title"/></br>
-            <label for="author">Author:</label>
-            <input type="text" id="author" name="author"/></br>
-            <label for="originalyear">OriginalYearOfPublication:</label>
-            <input type="number" id="originalyear" name="originalyear"/>
-            <button type="submit" onclick="return submitPost()">Submit</button>
-        </form>
-        <h2>Formulário Básico (Put)</h2>
-        <form id="putForm">
-            <label for="id">Id:</label>
-            <input type="number" id="id" name="id"/></br>
-            <label for="title">Title:</label>
-            <input type="text" id="title" name="title"/></br>
-            <label for="author">Author:</label>
-            <input type="text" id="author" name="author"/></br>
-            <label for="originalyear">OriginalYearOfPublication:</label>
-            <input type="number" id="originalyear" name="originalyear"/>
-            <button type="submit" onclick="return submitPut()">Submit</button>
-        </form>
-        <h2>Formulário Básico (Delete)</h2>
-        <form id="deleteForm">
-            <label for="id">Id:</label>
-            <input type="number" id="id" name="id">
-            <button type="submit" onclick="return submitDelete()">Submit</button>
-        </form>
+        <header>
+            <h1>Formulário</h1>
+        </header>
+        <div class="div_maior">
+            <h2>Operações</h2>
+                <a href="javascript:callFetchWithGet()">Get</a>
+                <a href="javascript:callFetchWithPost('Cristianismo','Marcos', 2013)">Post</a>
+                <a href="javascript:callFetchWithPut(1, 'Davai','Mamr', 2094)">Put</a>
+                <a href="javascript:callFetchWithDelete(1)">Delete</a>
+            <h2>Formulário para inserir um livro</h2>
+            <form id="postForm">
+                <label for="title">Insira o título do livro</label></br>
+                <input type="text" id="title" name="title"/></br>
+                <label for="author">Insira o autor do livro</label></br>
+                <input type="text" id="author" name="author"/></br>
+                <label for="originalyear">Insira o ano de publicação do livro</label></br>
+                <input type="number" id="originalyear" name="originalyear"/></br>
+                <button type="submit" onclick="return submitPost()">Submit</button>
+            </form>
+            <h2>Formulário para atualizar um livro</h2>
+            <form id="putForm">
+                <label for="id">Selecione o livro a ser atualizado</label></br>
+                <input type="number" id="id" name="id"/></br>
+                <label for="title">Insira o novo título do livro</label></br>
+                <input type="text" id="title" name="title"/></br>
+                <label for="author">Insira o novo autor do livro</label></br>
+                <input type="text" id="author" name="author"/></br>
+                <label for="originalyear">Insira o novo ano de publicação</label></br>
+                <input type="number" id="originalyear" name="originalyear"/></br>
+                <button type="submit" onclick="return submitPut()">Submit</button>
+            </form>
+            <h2>Formulário para deletar um livro</h2>
+            <form id="deleteForm">
+                <label for="id">Selecione o livro a ser deletado</label></br>
+                <input type="number" id="id" name="id"></br>
+                <button type="submit" onclick="return submitDelete()">Submit</button>
+            </form>
+            
+        </div>
+        <div class="json">
+            <h2>Json Text</h2>
+            <p id="json"></p>
+        </div>
 
     </body>
 </html>
