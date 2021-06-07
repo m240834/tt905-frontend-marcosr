@@ -6,16 +6,17 @@ async function callFetchWithGet() {
         method: 'GET',
         mode: 'cors',
         headers: headers
-    }
+        }
     const output = document.getElementById("json");
     const response = await fetch(url, options);
-
     if (response.status >= 200 && response.status <= 300){
-        console.log("Funcionou");
+        console.log("O request GET funcionou");
         output.innerHTML = await response.text();
+       
     } else {
-        console.log("Deu errado");
+        console.log("O request GET deu errado");
     }
+    
 }
 
 async function callFetchWithPost(title, author, originalyear) {
